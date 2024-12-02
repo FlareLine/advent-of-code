@@ -15,13 +15,19 @@ for (const line of lines) {
   list2.push(parseInt(parts[1]));
 }
 
-list1 = list1.sort();
-list2 = list2.sort();
+let list1Total = list1.reduce((s, c) => s + c, 0);
+let list2Total = list2.reduce((s, c) => s + c, 0);
 
-let total: number = 0;
 
-list1.map((n, i) => {
-  total += Math.abs(n - list2[i]);
-});
+// list1 = list1.sort();
+// list2 = list2.sort();
+
+// let total: number = 0;
+
+// list1.map((n, i) => {
+//   total += Math.abs(n - list2[i]);
+// });
+
+let total = list1Total - list2Total;
 
 console.log(total);
