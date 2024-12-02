@@ -1,0 +1,8 @@
+{
+  "name": "advent-of-code",
+  "description": "Advent of code challenges",
+  "author": "FlareLine",
+  "dependencies": {
+    "@types/node": "^22.10.1"
+  }
+}

@@ -1,2 +1,6 @@
 # advent-of-code
-🎄 Advent of code works and answers
+🎄 Advent of code challenges.
+
+## How to
+
+Run `npx tsx <file>` to run each challenge.
