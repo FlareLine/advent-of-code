@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 
-const input = fs.readFileSync(path.join(__dirname, '3.input')).toString().replace('\n','');
+const input = fs.readFileSync(path.join(__dirname, '3.input')).toString().replace('\n', '');
 
 const total = input
   // index by do() calls
@@ -22,7 +22,7 @@ const total = input
     .reduce((block, mul) => block + mul, 0))
   // sum all blocks to get total
   .reduce((total, block) => total + block, 0)
-  
+
 // print total
 console.log(JSON.stringify(total));
 
